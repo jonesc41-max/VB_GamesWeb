@@ -1,0 +1,501 @@
+/* ==========================================================================
+   1. GLOBAL RESET & BASE STYLES
+   ========================================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling enabled for internal anchor links */
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: Navy;
+    background-color: Gray;
+}
+
+/* Container class to center content and limit maximum width */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Headings typography styling applying retro pixel font */
+h1, h2, h3 {
+    font-family: 'Press Start 2P', cursive, monospace;
+    color: navy;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+
+/* ==========================================================================
+   2. STICKY HEADER & NAVIGATION STYLES
+   ========================================================================== */
+
+.site-header {
+    background-color: silver;
+    border-bottom: 3px solid white;
+    padding: 20px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.logo {
+    font-size: 2.2rem;
+    color: darkblue;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.tagline {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: black;
+    margin-bottom: 15px;
+}
+
+/* Navigation list formatting */
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.main-nav a {
+    font-family: 'Press Start 2P', cursive, monospace;
+    color: navy;
+    text-decoration: none;
+    font-size: 0.65rem;
+    padding: 8px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+.main-nav a:hover,
+.main-nav a:focus {
+    background-color: black;
+    color: white;
+    outline: 2px solid white;
+}
+
+
+/* ==========================================================================
+   3. HERO BANNER SECTION
+   ========================================================================== */
+
+.about-section {
+    background-color: #e0e0e0;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><rect width="8" height="8" fill="%23c0c0c0"/><rect x="8" width="8" height="8" fill="%23ffffff"/><rect y="8" width="8" height="8" fill="%23ffffff"/><rect x="8" y="8" width="8" height="8" fill="%23a0a0a0"/></svg>');
+    background-repeat: repeat;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 0;
+    border-bottom: 4px solid navy;
+}
+
+.hero-title {
+    font-size: 1.8rem;
+    color: darkblue;
+    margin-bottom: 25px;
+}
+
+.hero-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.92);
+    padding: 20px;
+    border: 2px solid navy;
+    border-radius: 4px;
+}
+
+
+/* ==========================================================================
+   4. CATALOG TABLE STYLES
+   ========================================================================== */
+
+.menu-table-section {
+    background-color: white;
+    text-align: center;
+}
+
+.table-responsive {
+    overflow-x: auto; /* Enables horizontal scrolling on small screens for accessibility */
+}
+
+.menu-table {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    border-collapse: collapse;
+    background-color: silver;
+    color: navy;
+    border: 2px solid navy;
+}
+
+.menu-table th {
+    font-family: 'Press Start 2P', cursive, monospace;
+    font-size: 0.75rem;
+    background-color: darkblue;
+    color: white;
+    padding: 12px;
+    border: 1px solid navy;
+}
+
+.menu-table td {
+    padding: 12px;
+    border: 1px solid navy;
+    font-weight: bold;
+}
+
+.menu-table tbody tr:nth-child(even) {
+    background-color: #dcdcdc;
+}
+
+
+/* ==========================================================================
+   5. SECTIONS & GENERAL LAYOUT
+   ========================================================================== */
+
+.section {
+    padding: 60px 0;
+    border-bottom: 2px solid navy;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: navy;
+}
+
+.section-intro {
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+
+/* ==========================================================================
+   6. GAMES STORE & SALES GRID LAYOUT
+   ========================================================================== */
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.game-card {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Sale badge styling */
+.sale-card {
+    border-color: gold;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: gold;
+    color: black;
+    font-family: 'Press Start 2P', cursive, monospace;
+    font-size: 0.55rem;
+    padding: 6px 10px;
+    border-radius: 4px;
+    z-index: 10;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: silver;
+    font-size: 0.9rem;
+    margin-right: 8px;
+}
+
+.game-image-placeholder {
+    background-color: silver;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: navy;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+    font-family: 'Press Start 2P', cursive, monospace;
+    font-size: 0.7rem;
+    padding: 10px;
+}
+
+.game-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.game-info h3 {
+    font-size: 0.9rem;
+    color: navy;
+}
+
+.genre {
+    font-size: 0.85rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 0.95rem;
+    color: silver;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: gold;
+    margin-bottom: 15px;
+}
+
+.btn {
+    font-family: 'Press Start 2P', cursive, monospace;
+    font-size: 0.65rem;
+    display: block;
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 12px 0;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: navy;
+    outline: 2px solid white;
+}
+
+
+/* ==========================================================================
+   7. REVIEWS SECTION
+   ========================================================================== */
+
+.reviews-section {
+    background-color: #f5f5f5;
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.review-card {
+    background-color: white;
+    border: 2px solid navy;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+}
+
+.review-stars {
+    color: #f39c12;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.review-text {
+    font-style: italic;
+    color: black;
+    margin-bottom: 15px;
+}
+
+.review-author {
+    font-weight: bold;
+    color: navy;
+}
+
+
+/* ==========================================================================
+   8. CONTACT SECTION & FORM STYLES
+   ========================================================================== */
+
+.contact-section {
+    background-color: gray;
+}
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.contact-details {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 2px solid navy;
+    text-align: left;
+    color: navy;
+}
+
+.contact-details h3 {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.contact-details p {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    border: 2px solid navy;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: navy;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid navy;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    background-color: #fdfdfd;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: 2px solid blue;
+    border-color: blue;
+}
+
+.form-btn {
+    width: 100%;
+}
+
+
+/* ==========================================================================
+   9. FOOTER STYLES (Three Columns & Back to Top)
+   ========================================================================== */
+
+.site-footer {
+    background-color: white;
+    color: navy;
+    border-top: 3px solid navy;
+    padding-top: 40px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.footer-col h3 {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    color: darkblue;
+}
+
+.footer-col p {
+    font-size: 0.9rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col li {
+    margin-bottom: 8px;
+}
+
+.footer-col a {
+    color: navy;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.footer-col a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Top button styling */
+.back-to-top-btn {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: navy;
+    color: white !important;
+    padding: 8px 14px;
+    border-radius: 4px;
+    font-family: 'Press Start 2P', cursive, monospace;
+    font-size: 0.6rem;
+    text-decoration: none;
+}
+
+.back-to-top-btn:hover {
+    background-color: lightblue;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: black;
+}

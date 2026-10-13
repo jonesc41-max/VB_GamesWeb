@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata setup for responsive behavior and character encoding -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volt Beam Games | Indie Studio in Westchester, Ohio</title>
+    
+    <!-- Google Fonts for retro pixel typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- External stylesheet link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+
+    <!-- Header Section: Sticky header with box shadow -->
+    <header class="site-header">
+        <div class="container header-container">
+            <h1 class="logo">Volt Beam Games</h1>
+            <p class="tagline">Independent Game Developer based in Ohio</p>
+            
+            <!-- Navigation Menu with added links -->
+            <nav class="main-nav" aria-label="Main Navigation">
+                <ul>
+                    <li><a href="#about">Welcome</a></li>
+                    <li><a href="#menu-table">Catalog</a></li>
+                    <li><a href="#games">Store</a></li>
+                    <li><a href="#sales">Sales</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contacting</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+
+        <!-- Section 1: Hero / About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="hero-title">Welcome to Volt Beam</h2>
+                <p class="hero-text">Hi! I'm an independent game developer crafting unique, story-driven indie games right here in Westchester, Ohio. Explore my featured titles below, check current sales, read reviews, or send a message!</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Studio Catalog Table -->
+        <section id="menu-table" class="section menu-table-section">
+            <div class="container">
+                <h2>Studio Catalog Table</h2>
+                <p class="section-intro">Quick summary table matching the website's color scheme.</p>
+
+                <!-- Accessible data table -->
+                <div class="table-responsive">
+                    <table class="menu-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Game Title</th>
+                                <th scope="col">Genre</th>
+                                <th scope="col">Platform</th>
+                                <th scope="col">Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Westchester Quest</td>
+                                <td>Retro RPG</td>
+                                <td>PC / Mac</td>
+                                <td>$7.99</td>
+                            </tr>
+                            <tr>
+                                <td>Neon Cyber Runner</td>
+                                <td>Action / Platformer</td>
+                                <td>PC / Console</td>
+                                <td>$9.99</td>
+                            </tr>
+                            <tr>
+                                <td>Dungeon Builder 3D</td>
+                                <td>Strategy / Simulation</td>
+                                <td>PC</td>
+                                <td>$4.99</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Games Store Section -->
+        <section id="games" class="section games-section">
+            <div class="container">
+                <h2>Featured Games</h2>
+                <p class="section-intro">Select a game below to purchase directly!</p>
+
+                <div class="games-grid">
+                    <!-- Game Card 1 -->
+                    <article class="game-card">
+                        <div class="game-image-placeholder" role="img" aria-label="Westchester Quest cover art visual placeholder">
+                            <span>Westchester Quest</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Westch. Quest</h3>
+                            <p class="genre">Genre: Retro RPG</p>
+                            <p class="description">An 8-bit adventure game set in a fictionalized version of suburban Ohio. Explore local landmarks and solve mysteries!</p>
+                            <p class="price">$7.99</p>
+                            <a href="#contact" class="btn">Buy Game</a>
+                        </div>
+                    </article>
+
+                    <!-- Game Card 2 -->
+                    <article class="game-card">
+                        <div class="game-image-placeholder" role="img" aria-label="Neon Cyber Runner cover art visual placeholder">
+                            <span>Neon Cyber Runner</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Neon Cyber Runner</h3>
+                            <p class="genre">Genre: Action / Platformer</p>
+                            <p class="description">Fast-paced cybernetic platforming featuring custom synthwave soundtracks and dynamic difficulty scaling.</p>
+                            <p class="price">$9.99</p>
+                            <a href="#contact" class="btn">Buy Game</a>
+                        </div>
+                    </article>
+
+                    <!-- Game Card 3 -->
+                    <article class="game-card">
+                        <div class="game-image-placeholder" role="img" aria-label="Dungeon Builder 3D cover art visual placeholder">
+                            <span>Dungeon Builder 3D</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Dungeon Builder 3D</h3>
+                            <p class="genre">Genre: Strategy / Simulation</p>
+                            <p class="description">Design, build, and defend your own intricate medieval dungeons against waves of AI heroes.</p>
+                            <p class="price">$4.99</p>
+                            <a href="#contact" class="btn">Buy Game</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Sales / Deals Section -->
+        <section id="sales" class="section sales-section">
+            <div class="container">
+                <h2>Sales & Special Deals</h2>
+                <p class="section-intro">Grab our indie titles at limited-time promotional rates!</p>
+
+                <div class="games-grid">
+                    <article class="game-card sale-card">
+                        <div class="sale-badge">50% OFF</div>
+                        <div class="game-image-placeholder" role="img" aria-label="Bundle Deal cover art placeholder">
+                            <span>Weekend Bundle</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Ohio Indie Mega Pack</h3>
+                            <p class="genre">All 3 Games Included</p>
+                            <p class="description">Get Westchester Quest, Neon Cyber Runner, and Dungeon Builder 3D together in one discounted bundle.</p>
+                            <p class="price"><span class="old-price">$22.97</span> $11.48</p>
+                            <a href="#contact" class="btn">Claim Deal</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Reviews Section -->
+        <section id="reviews" class="section reviews-section">
+            <div class="container">
+                <h2>Player Reviews</h2>
+                <p class="section-intro">See what players are saying about Volt Beam Games.</p>
+
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="review-text">"Westchester Quest captured local Ohio charm perfectly while delivering solid retro RPG mechanics. Highly recommended!"</p>
+                        <p class="review-author">- LocalGamer93</p>
+                    </div>
+                    <div class="review-card">
+                        <p class="review-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                        <p class="review-text">"Neon Cyber Runner is fast, fluid, and has an incredible soundtrack. Well worth every penny."</p>
+                        <p class="review-author">- SynthWaveFan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Contact Us Section with Form -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p class="section-intro">Reach out for business inquiries, support, or feedback.</p>
+
+                <div class="contact-wrapper">
+                    <!-- Contact Details Box -->
+                    <div class="contact-details">
+                        <h3>Studio Info</h3>
+                        <p><strong>Location:</strong> Westchester, Ohio 45014</p>
+                        <p><strong>Email:</strong> jonescmcomputer@gmail.com</p>
+                        <p><strong>Hours:</strong> Mon – Fri, 9:00 AM – 5:00 PM EST</p>
+                    </div>
+
+                    <!-- Accessible Contact Form -->
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Write your message here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn form-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section: Three-column layout with Back to Top button -->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <!-- Column 1: Studio Info -->
+            <div class="footer-col">
+                <h3>Volt Beam Games</h3>
+                <p>Independent game studio located in Westchester, Ohio, building immersive retro and arcade-style experiences.</p>
+            </div>
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h3>Quick Navigation</h3>
+                <ul>
+                    <li><a href="#about">Welcome</a></li>
+                    <li><a href="#games">Games Store</a></li>
+                    <li><a href="#sales">Sales</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Column 3: Back to Top & Copyright -->
+            <div class="footer-col">
+                <h3>Connect & Return</h3>
+                <p>Support: jonescmcomputer@gmail.com</p>
+                <br>
+                <!-- Back to top button anchor -->
+                <a href="#top" class="back-to-top-btn">Back to Top &uarr;</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+           <br>
+            <p>Disclaimer:<br>
+            I have not released anything yet, these Games, sales, and the reviews are not real,<br>
+            and are used simply for this project, thank you.<br>
+               This may change over time. (If I decide to keep this...)</p>
+                <br>
+                <br>
+            <hr>
+            <br>
+            <p>&copy; 2026 Volt Beam - Chris J. - All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
